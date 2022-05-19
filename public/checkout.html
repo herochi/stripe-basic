@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buy cool new product</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+  </head>
+  <body>
+    <section>
+      <div class="product">
+        <img src="https://esports.as.com/2020/01/27/G2_Esportslogo_square.png?hash=0fa5532caa9899d8f151aaad2783b2416fb57a42" alt="The cover of Stubborn Attachments" />
+        <div class="description">
+          <h3>Suscripción Basica</h3>
+          <h5>$99.00MXN per Month</h5>
+        </div>
+      </div>
+      <form action="/create-checkout-session-sus-basic" method="POST">
+        <button type="submit" id="checkout-button-sus-basic">Checkout</button>
+      </form>
+    </section>
+
+    <section>
+      <div class="product">
+        <img src="https://startupxplore.com/uploads/ff8080816939aac301694804bc7a0190-large.png" alt="The cover of Stubborn Attachments" />
+        <div class="description">
+          <h3>Suscripción Preimum</h3>
+          <h5>150.00MXN per Month</h5>
+        </div>
+      </div>
+      <form action="/create-checkout-session-sus-prem" method="POST">
+        <button type="submit" id="checkout-button-sus-prem">Checkout</button>
+      </form>
+    </section>
+
+    <section>
+      <div class="product">
+        <img src="https://www.kiban.mx/images/workfloo-icon.png" alt="The cover of Stubborn Attachments" />
+        <div class="description">
+          <h3>WorkFloo</h3>
+          <h5>$130,000MXN</h5>
+        </div>
+      </div>
+      <form action="/create-checkout-session-unique" method="POST">
+        <button type="submit" id="checkout-button-unique">Checkout</button>
+      </form>
+    </section>
+  </body>
+</html>
